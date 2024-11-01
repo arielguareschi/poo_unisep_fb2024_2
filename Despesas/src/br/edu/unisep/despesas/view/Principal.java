@@ -8,6 +8,7 @@ import br.edu.unisep.despesas.util.Funcoes;
 
 import javax.swing.*;
 import java.util.Calendar;
+import java.util.Objects;
 
 public class Principal {
     public static void main(String[] args){
@@ -47,8 +48,11 @@ public class Principal {
 //        System.out.println(hotDog.toString());
 
         Funcoes funcoes = new Funcoes();
-//        funcoes.novaCategoria();
-        funcoes.escolherOpcao();
+        while(true) {
+            if (!funcoes.escolherOpcao()){
+                break;
+            }
+        }
     }
 
 }
