@@ -28,6 +28,10 @@ public class Menu {
         jBtnAddCidade.addActionListener(e -> new CidadeAdd(cidades));
         painel.add(jBtnAddCidade);
 
+        JButton jBtnShowCidade = new JButton("Listar Cidades");
+        jBtnShowCidade.addActionListener(e -> new CidadeList(cidades));
+        painel.add(jBtnShowCidade);
+
         janela.add(painel);
 
         janela.addWindowListener(new WindowAdapter(){
